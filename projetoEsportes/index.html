@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz de Esportes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Quiz de Esportes:</h1>
-    <div id="container">
-    <h2 id ="pergunta"></h2>
-    <img src="" id="imagem" alt=""><br>
-    <div id="respostas"></div>
-    <p id="resultado"></p>
-    
-    <button id="ProximaPergunta" onclick="proximaPergunta()">proxima pergunta</button>
-     <div></div>
+    <div id="start-screen">
+        <h1>Quiz de Esportes</h1>
+        <p>Teste seus conhecimentos com perguntas sobre esportes, imagens e pontuação.</p>
+        <button id="startButton" onclick="startQuiz()">Começar Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+        <h1>Quiz de Esportes</h1>
+        <div id="container">
+            <h2 id="pergunta"></h2>
+            <img src="" id="imagem" alt="Imagem da pergunta"><br>
+            <div id="respostas"></div>
+            <p id="resultado"></p>
+            <button id="ProximaPergunta" onclick="proximaPergunta()">Próxima pergunta</button>
+        </div>
+    </div>
+
+    <div id="end-screen" class="hidden">
+        <h1>Quiz finalizado!</h1>
+        <p id="final-score">Sua pontuação foi: 0</p>
+        <button id="restartButton" onclick="startQuiz()">Jogar novamente</button>
+    </div>
+
     <script src="scriprt.js"></script>
 </body>
 </html>
