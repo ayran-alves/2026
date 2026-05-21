@@ -1,9 +1,22 @@
 #imagem {
+<<<<<<< HEAD
     width: 450px;
     height: 300px;
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+=======
+width: 450px;
+height: 300px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+width: 350px;
+border-radius: 20px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+transition: 0.3s;
+
+>>>>>>> 8c0a98e1fa529a997b351d617c170fcd16b6191c
 }
 
 header {
@@ -29,12 +42,21 @@ body {
     margin: 0;
     width: 100%;
     font-size: 30px;
+<<<<<<< HEAD
     background: linear-gradient(180deg, #3b82f6 0%, #1e40af 100%);
+=======
+    background-image: url(https://img.freepik.com/vetores-gratis/antecedentes-do-design-tecnologico_23-2148497493.jpg?semt=ais_hybrid&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+>>>>>>> 8c0a98e1fa529a997b351d617c170fcd16b6191c
     color: rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family: 'Poppins', sans-serif;
 }
+
+
+
 button {
+<<<<<<< HEAD
     background: linear-gradient(135deg, #38bdf8, #0ea5e9);
     color: #ffffff;
     border: 2px solid rgba(255, 255, 255, 0.8);
@@ -45,6 +67,19 @@ button {
     cursor: pointer;
     transition: 0.25s ease;
     box-shadow: 0 6px 20px rgba(14, 165, 233, 0.25);
+=======
+    padding: 15px 28px;
+    border:none;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#006eff,#006eff);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+>>>>>>> 8c0a98e1fa529a997b351d617c170fcd16b6191c
 }
  
 
@@ -61,6 +96,7 @@ button {
   background-color: #38bdf8;
   transform: scale(1.05);
 }
+<<<<<<< HEAD
 button:hover{
     transform: scale(1.08);
     background: #0ea5e9;
@@ -133,3 +169,21 @@ button:hover{
     flex-wrap: wrap;
 }
 
+=======
+.proxima {
+    background: linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+
+h1{
+    font-size: 55px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+h2{
+    color:white;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+>>>>>>> 8c0a98e1fa529a997b351d617c170fcd16b6191c

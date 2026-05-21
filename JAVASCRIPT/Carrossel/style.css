@@ -1,0 +1,20 @@
+.carrossel {
+    width: 500px;
+}
+
+.img{
+    width:  100%;
+    display: none;
+    border-radius: 20px;
+
+}
+
+.ativa {
+    display: block;
+}
+button {
+color: rgb(255, 255, 255);
+background-color: gray;
+border-radius: 15px; 
+width: 150px;
+}
