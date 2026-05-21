@@ -27,7 +27,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 30px;
-    background-image: url(https://marketplace.canva.com/wCL_o/MADuJ7wCL_o/1/tl/canva-dark-blue-concrete-texture-MADuJ7wCL_o.jpg);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGg5H9sBc92EXAGuNjCO-BFCfiCjrneLyOQ&s);
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(255, 255, 255);
@@ -35,11 +35,18 @@ body {
 
 }
 button {
-    width: 100px;
-    height: 60px;
-    border-radius: 20px;
-    
+    background: linear-gradient(135deg, #00bfff, #4b00ff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
+ 
 
 #respostas {
     display: flex;
@@ -49,4 +56,9 @@ button {
 .btn-resposta:hover {
   background-color: #f0f0f0;
   transform: scale(1.05);
+}
+button:hover{
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #4b00ff, #00bfff);
+    box-shadow: 0 0 20px #00bfff;
 }
