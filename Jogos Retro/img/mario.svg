@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem de jogo de plataforma</title>
+  <desc id="desc">Cenario de aventura com montanhas, moeda e personagem estilizado.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#bfe7ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="260" fill="url(#sky)"/>
+  <circle cx="76" cy="70" r="28" fill="#f6c400" stroke="#070707" stroke-width="7"/>
+  <path d="M0 180l92-92 76 76 48-48 112 112H0z" fill="#0067e8"/>
+  <path d="M114 190l74-74 108 108H114z" fill="#ff5b00"/>
+  <rect x="0" y="198" width="420" height="62" fill="#eadcc3"/>
+  <rect x="60" y="176" width="92" height="28" rx="14" fill="#ffffff" stroke="#070707" stroke-width="7"/>
+  <rect x="226" y="154" width="122" height="32" rx="16" fill="#ffffff" stroke="#070707" stroke-width="7"/>
+  <circle cx="198" cy="112" r="26" fill="#ff5b00" stroke="#070707" stroke-width="7"/>
+  <path d="M182 142h38l24 44h-86l24-44z" fill="#f6c400" stroke="#070707" stroke-width="7"/>
+</svg>
