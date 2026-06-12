@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Imagem de colecao de jogos</title>
+  <desc id="desc">Console, controle e jogos em uma composicao limpa.</desc>
+  <rect width="420" height="260" fill="#eadcc3"/>
+  <circle cx="326" cy="70" r="56" fill="#f6c400"/>
+  <rect x="58" y="62" width="212" height="128" rx="24" fill="#ffffff" stroke="#070707" stroke-width="8"/>
+  <rect x="86" y="96" width="120" height="20" rx="10" fill="#0067e8"/>
+  <rect x="86" y="132" width="72" height="20" rx="10" fill="#ff5b00"/>
+  <rect x="226" y="118" width="96" height="96" rx="28" fill="#0067e8" stroke="#070707" stroke-width="8"/>
+  <circle cx="260" cy="166" r="14" fill="#f6c400" stroke="#070707" stroke-width="5"/>
+  <circle cx="292" cy="166" r="14" fill="#ff5b00" stroke="#070707" stroke-width="5"/>
+  <rect x="88" y="204" width="128" height="24" rx="12" fill="#070707"/>
+</svg>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Play | Jogos antigos em São Paulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="Retro Play - início">
+            <span class="brand-mark">R</span>
+            <span class="brand-name">Retro Play</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegação principal">
+            <a href="#jogos">Jogos</a>
+            <a href="#sorteios">Sorteios</a>
+            <a href="#localizacao">Localização</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="kicker">Loja de jogos antigos em Santa Cecília</p>
+                <h1>Retro Play</h1>
+                <p class="hero-copy">
+                    Cartuchos, consoles, arcades e clássicos que marcaram época:
+                    Street Fighter, Mario, Tetris e muitos outros esperando por uma nova partida.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#sorteios">Participar dos sorteios</a>
+                    <a class="button secondary" href="#localizacao">Ver endereço</a>
+                </div>
+            </div>
+
+            <div class="arcade-scene" aria-label="Ilustração retrô com arcade e peças de jogo">
+                <div class="spark spark-one"></div>
+                <div class="spark spark-two"></div>
+                <div class="spark spark-three"></div>
+
+                <div class="arcade">
+                    <div class="arcade-screen">
+                        <div class="screen-grid"></div>
+                        <div class="pixel-hero"></div>
+                        <div class="pixel-block block-one"></div>
+                        <div class="pixel-block block-two"></div>
+                        <div class="pixel-block block-three"></div>
+                    </div>
+                    <div class="arcade-controls">
+                        <span class="stick"></span>
+                        <span class="control red"></span>
+                        <span class="control yellow"></span>
+                        <span class="control blue"></span>
+                    </div>
+                </div>
+
+                <div class="cartridge cart-left">
+                    <span>16 BIT</span>
+                </div>
+                <div class="cartridge cart-right">
+                    <span>ARCADE</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="games-band" id="jogos">
+            <div class="section-heading">
+                <p class="kicker">Clássicos de volta</p>
+                <h2>Jogos que atravessaram gerações</h2>
+            </div>
+
+            <div class="game-grid">
+                <article class="game-card fighter">
+                    <img class="game-image" src="img/street-fighter.svg" alt="Imagem de jogo de luta">
+                    <span class="game-icon">KO</span>
+                    <h3>Street Fighter</h3>
+                    <p>Duelo, combo e nostalgia de fliperama para quem sente falta do botão pesado.</p>
+                </article>
+                <article class="game-card platform">
+                    <img class="game-image" src="img/mario.svg" alt="Imagem de jogo de plataforma">
+                    <span class="game-icon">M</span>
+                    <h3>Mario</h3>
+                    <p>A aventura colorida que virou lembrança afetiva de várias gerações.</p>
+                </article>
+                <article class="game-card puzzle">
+                    <img class="game-image" src="img/tetris.svg" alt="Imagem de jogo de puzzle">
+                    <span class="game-icon">T</span>
+                    <h3>Tetris</h3>
+                    <p>Peças caindo, raciocínio rápido e aquela vontade de jogar só mais uma.</p>
+                </article>
+                <article class="game-card collection">
+                    <img class="game-image" src="img/classicos.svg" alt="Imagem de console e jogos">
+                    <span class="game-icon">+</span>
+                    <h3>Muitos outros</h3>
+                    <p>Consoles, cartuchos e acessórios para garimpar como nos velhos tempos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="raffle-band" id="sorteios">
+            <div class="raffle-copy">
+                <p class="kicker">Sorteios Retro Play</p>
+                <h2>Entre na lista e concorra a prêmios retrô</h2>
+                <p>
+                    Cadastre seus dados para participar dos sorteios da loja. A cada campanha,
+                    a Retro Play entra em contato com os participantes pelo e-mail ou celular informado.
+                </p>
+
+                <div class="score-strip" aria-label="Destaques dos sorteios">
+                    <span><strong>Arcade</strong> brindes</span>
+                    <span><strong>Cartuchos</strong> clássicos</span>
+                    <span><strong>Consoles</strong> surpresa</span>
+                </div>
+            </div>
+
+            <form class="raffle-form" id="raffleForm">
+                <h2>Inscrição</h2>
+
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+
+                <label for="phone">Celular</label>
+                <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" required>
+
+                <button class="button primary full" type="submit">Quero participar</button>
+                <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="location-band" id="localizacao">
+            <div class="location-content">
+                <p class="kicker">Visite a loja</p>
+                <h2>Av. São João, 1476 - Santa Cecília, São Paulo</h2>
+                <p>
+                    Um ponto para encontrar jogos antigos, conversar sobre clássicos e sair com uma
+                    nova relíquia para a coleção.
+                </p>
+            </div>
+
+            <div class="store-panel" aria-label="Painel visual da loja Retro Play">
+                <div class="store-sign">RETRO PLAY</div>
+                <div class="shelf">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="console">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Retro Play - jogos antigos, sorteios e nostalgia em São Paulo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
