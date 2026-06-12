@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Play | Jogos Antigos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <div id="logo1">
+                    <img src="logo.svg" alt="Logo Retro Play" class="brand-logo" />
+                </div>
+                <div>
+                    <h1>Retro Play</h1>
+
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="#destaques">Destaques</a>
+                <a href="#sorteio">Sorteio</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <span class="eyebrow">Loja de Jogos Antigos</span>
+                    <h2>Reviva clássicos como Street Fighter, Mario e Tetris.</h2>
+                    <p>Na Retro Play, a nostalgia é a estrela. Descubra consoles, cartuchos e eventos especiais para
+                        gamers de todas as idades.</p>
+                    <a class="button button-primary" href="#sorteio">Quero participar</a>
+                </div>
+                <div class="hero-card">
+                    <h3>Busque seu jogo classico</h3>
+                    <div class="search-wrapper">
+                        <input id="searchInput" type="search"
+                            placeholder="Procure por Street Fighter, Mario, Tetris..." />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="carousel-section" aria-label="Destaque de jogos antigos">
+            <div class="container">
+                <h2>Jogos em Destaque</h2>
+                <div class="carousel" id="carousel">
+                    <div class="slide active" data-name="street fighter">
+                        <img src="https://atlantidasc.com.br/wp-content/uploads/2026/04/Street-Fighter-1.jpg"
+                            alt="Street Fighter clássico" />
+                        <div class="slide-caption"><br>
+                            <strong>Street Fighter</strong>
+                            <p>Batalhas épicas e energia arcade.</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-name="super mario">
+                        <img src="https://i.ytimg.com/vi/MvNV_yKkNd0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCHR59tiwb-L9YWfAndDOZChn6Oxg"
+                            alt="Mario clássico"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x800?text=Super+Mario';" />
+                        <div class="slide-caption">
+                            <strong>Super Mario</strong>
+                            <p>Aventura e nostalgia para toda a família.</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-name="tetris">
+                        <img src="https://www.datocms-assets.com/145957/1744284280-tetris-mobile.png"
+                            alt="Tetris clássico" />
+                        <div class="slide-caption">
+                            <strong>Tetris</strong>
+                            <p>O quebra-cabeça que nunca sai de moda.</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-name="sonic">
+                        <img src="https://i0.wp.com/cloud.estacaonerd.com/wp-content/uploads/2024/05/08134557/mail-2024-05-08T134510.906-scaled.webp?fit=2560%2C1440&ssl=1"
+                            alt="Sonic clássico"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x800?text=Sonic';" />
+                        <div class="slide-caption">
+                            <strong>Sonic</strong>
+                            <p>Velocidade, estilo e trilha sonora inesquecível.</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-name="zelda">
+                        <img src="https://img.odcdn.com.br/wp-content/uploads/2022/09/fcixd2jxoae8rle-1663080849740.jpg"
+                            alt="The Legend of Zelda clássico"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x800?text=Zelda';" />
+                        <div class="slide-caption">
+                            <strong>The Legend of Zelda</strong>
+                            <p>Exploração, magia e aventuras épicas por Hyrule.</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-name="mortal kombat">
+                        <img src="https://files.meiobit.com/wp-content/uploads/2019/04/20190426mortal-kombat-001.jpg"
+                            alt="Mortal Kombat clássico"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x800?text=Mortal+Kombat';" />
+                        <div class="slide-caption">
+                            <strong>Mortal Kombat</strong>
+                            <p>Acabe com a competição em lutas cheias de ação.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="destaques" class="section container">
+            <h2>Principais jogos</h2>
+            <p class="section-subtitle">Os classicos que você encontra na Retro Play.</p>
+            <div class="cards-grid" id="gameCards">
+                <article class="card" data-name="street fighter">
+                    <h3>Street Fighter</h3>
+                    <p>Combates lendarios, personagens iconicos e mood de fliperama.</p>
+                </article>
+                <article class="card" data-name="super mario">
+                    <h3>Super Mario</h3>
+                    <p>Salve a princesa em mundos coloridos e cheios de emoção.</p>
+                </article>
+                <article class="card" data-name="tetris">
+                    <h3>Tetris</h3>
+                    <p>Encante-se com a lógica das peças em queda e os desafios sem fim.</p>
+                </article>
+                <article class="card" data-name="sonic">
+                    <h3>Sonic</h3>
+                    <p>Velocidade, estilo e trilha sonora inesquecivel.</p>
+                </article>
+                <article class="card" data-name="zelda">
+                    <h3>The Legend of Zelda</h3>
+                    <p>Exploração, magia e aventuras épicas por Hyrule.</p>
+                </article>
+                <article class="card" data-name="mortal kombat">
+                    <h3>Mortal Kombat</h3>
+                    <p>Acabe com a competição em lutas cheias de ação.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sorteio" class="section section-alt">
+            <div class="container split-grid">
+                <div>
+                    <span class="eyebrow">Sorteios e Inscrições</span>
+                    <h2>Participe dos sorteios e ganhe prêmios exclusivos.</h2>
+                    <p>Inscreva seu nome, e-mail e celular para entrar na lista de participação dos sorteios mensais.
+                    </p>
+                    <ul class="check-list">
+                        <li>Prêmios exclusivos de jogos retrô</li>
+                        <li>Convites para eventos na loja</li>
+                        <li>Descontos especiais em acessórios</li>
+                    </ul>
+                </div>
+                <form id="signupForm" class="form-card">
+                    <h3>Quero participar</h3>
+                    <label>
+                        Nome completo
+                        <input type="text" id="nameInput" placeholder="Seu nome" required />
+                    </label>
+                    <label>
+                        E-mail
+                        <input type="email" id="emailInput" placeholder="seu@email.com" required />
+                    </label>
+                    <label>
+                        Celular
+                        <input type="tel" id="phoneInput" placeholder="(11) 9 1234-5678" required />
+                    </label>
+                    <button type="submit" class="button button-primary">Enviar inscrição</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+
+        <section id="faq" class="section container">
+            <h2>Dúvidas frequentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" type="button">Como faço para participar do sorteio?</button>
+                    <p class="faq-answer">Preencha o formulário com nome, e-mail e celular. Sua inscrição estará
+                        automaticamente concorrendo aos prêmios.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" type="button">Quais jogos posso encontrar na loja?</button>
+                    <p class="faq-answer">Temos títulos clássicos como Street Fighter, Super Mario, Tetris, Sonic, Zelda
+                        e muitos outros em cartucho, console e acessórios.</p>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" type="button">Posso visitar a loja sem comprar?</button>
+                    <p class="faq-answer">Claro! A Retro Play é aberta para quem quiser conhecer, jogar e lembrar dos
+                        velhos tempos.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <h3>Retro Play</h3>
+                <p>Av. São João, 1476 - Santa Cecília, São Paulo</p>
+                <p>Telefone: (11) 4000-1000</p>
+            </div>
+            <p>Venha reviver os melhores jogos antigos com sorteios, novidade e muita nostalgia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
