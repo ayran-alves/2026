@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Fatia Delivery | Bolos Artesanais</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <a class="marca" href="#" data-screen="home" aria-label="Ir para a home">
+            <span class="marca-icone">DF</span>
+            <span>Doce Fatia Delivery</span>
+        </a>
+
+        <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navegacao" aria-label="Menu principal">
+            <button class="nav-link ativo" type="button" data-screen="home">Home</button>
+            <button class="nav-link" type="button" data-screen="cart">Carrinho <span class="cart-count">0</span></button>
+            <button class="nav-link" type="button" data-screen="login">Login</button>
+            <button class="nav-link destaque" type="button" data-screen="cadastro">Cadastro</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="screen ativo" id="home">
+            <div class="hero">
+                <div class="hero-conteudo">
+                    <p class="etiqueta">Delivery de bolos artesanais</p>
+                    <h1>Bolos frescos entregues na sua porta.</h1>
+                    <p>Escolha o sabor, monte o carrinho e finalize com entrega rapida, retirada na loja ou entrega agendada.</p>
+                    <div class="hero-acoes">
+                        <button class="botao principal" type="button" data-screen="home">Pedir agora</button>
+                        <button class="botao secundario" type="button" data-screen="cadastro">Criar conta</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="delivery-faixa" aria-label="Informacoes de delivery">
+                <div>
+                    <strong>Aberto hoje</strong>
+                    <span>10h as 22h</span>
+                </div>
+                <div>
+                    <strong>Entrega media</strong>
+                    <span>35 a 50 min</span>
+                </div>
+                <div>
+                    <strong>Pedido minimo</strong>
+                    <span>R$ 35,00</span>
+                </div>
+                <div>
+                    <strong>Pagamento</strong>
+                    <span>PIX, debito, credito e boleto</span>
+                </div>
+            </section>
+
+            <section class="vitrine" aria-labelledby="titulo-vitrine">
+                <div class="secao-cabecalho">
+                    <p class="etiqueta">Cardapio de hoje</p>
+                    <h2 id="titulo-vitrine">Escolha seu bolo</h2>
+                </div>
+
+                <div class="produtos" id="product-list"></div>
+            </section>
+        </section>
+
+        <section class="screen" id="cart" aria-labelledby="titulo-carrinho">
+            <div class="pagina-cabecalho">
+                <p class="etiqueta">Resumo do pedido</p>
+                <h1 id="titulo-carrinho">Carrinho</h1>
+            </div>
+
+            <div class="carrinho-layout">
+                <div class="checkout-coluna">
+                    <section class="checkout-bloco" aria-labelledby="titulo-itens">
+                        <div class="bloco-topo">
+                            <h2 id="titulo-itens">Itens do pedido</h2>
+                            <span class="tag-delivery">Preparo artesanal</span>
+                        </div>
+                        <div class="carrinho-itens" id="cart-items" aria-live="polite"></div>
+                    </section>
+
+                    <section class="checkout-bloco" aria-labelledby="titulo-entrega">
+                        <div class="bloco-topo">
+                            <h2 id="titulo-entrega">Modo de entrega</h2>
+                            <span class="tag-delivery">Taxas</span>
+                        </div>
+
+                        <label class="campo-entrega" for="endereco">
+                            Endereco para entrega
+                            <input id="endereco" type="text" placeholder="Rua, numero, bairro">
+                        </label>
+
+                        <div class="opcoes-grid" id="delivery-options">
+                            <label class="opcao-card ativo">
+                                <input type="radio" name="delivery-mode" value="padrao" checked>
+                                <span>
+                                    <strong>Entrega padrao</strong>
+                                    <small>35 a 50 min</small>
+                                </span>
+                                <b>R$ 8,00</b>
+                            </label>
+
+                            <label class="opcao-card">
+                                <input type="radio" name="delivery-mode" value="expressa">
+                                <span>
+                                    <strong>Entrega expressa</strong>
+                                    <small>20 a 30 min</small>
+                                </span>
+                                <b>R$ 14,00</b>
+                            </label>
+
+                            <label class="opcao-card">
+                                <input type="radio" name="delivery-mode" value="retirada">
+                                <span>
+                                    <strong>Retirada na loja</strong>
+                                    <small>Retire em 25 min</small>
+                                </span>
+                                <b>Gratis</b>
+                            </label>
+                        </div>
+                    </section>
+
+                    <section class="checkout-bloco" aria-labelledby="titulo-pagamento">
+                        <div class="bloco-topo">
+                            <h2 id="titulo-pagamento">Forma de pagamento</h2>
+                            <span class="tag-delivery">Online</span>
+                        </div>
+
+                        <div class="pagamento-grid" id="payment-options">
+                            <label class="pagamento-card ativo">
+                                <input type="radio" name="payment-method" value="PIX" checked>
+                                <span>PIX</span>
+                            </label>
+
+                            <label class="pagamento-card">
+                                <input type="radio" name="payment-method" value="Debito">
+                                <span>Debito</span>
+                            </label>
+
+                            <label class="pagamento-card">
+                                <input type="radio" name="payment-method" value="Credito">
+                                <span>Credito</span>
+                            </label>
+
+                            <label class="pagamento-card">
+                                <input type="radio" name="payment-method" value="Boleto">
+                                <span>Boleto</span>
+                            </label>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="pedido-resumo" aria-label="Resumo de valores">
+                    <p class="etiqueta">Checkout delivery</p>
+                    <h2>Total do pedido</h2>
+                    <div class="linha-resumo">
+                        <span>Subtotal</span>
+                        <strong id="subtotal">R$ 0,00</strong>
+                    </div>
+                    <div class="linha-resumo">
+                        <span id="delivery-label">Entrega padrao</span>
+                        <strong id="delivery">R$ 0,00</strong>
+                    </div>
+                    <div class="linha-resumo">
+                        <span>Pagamento</span>
+                        <strong id="payment-label">PIX</strong>
+                    </div>
+                    <div class="linha-resumo total">
+                        <span>Total</span>
+                        <strong id="total">R$ 0,00</strong>
+                    </div>
+                    <button class="botao principal largura-total" type="button" id="checkout">Finalizar pedido</button>
+                    <p class="nota" id="checkout-note">Escolha seus itens para liberar o pedido.</p>
+                </aside>
+            </div>
+        </section>
+
+        <section class="screen" id="login" aria-labelledby="titulo-login">
+            <div class="formulario-tela">
+                <div class="formulario-imagem login-img" aria-hidden="true"></div>
+                <form class="formulario" id="login-form">
+                    <p class="etiqueta">Bem-vindo de volta</p>
+                    <h1 id="titulo-login">Entrar na conta</h1>
+
+                    <label for="login-email">E-mail</label>
+                    <input id="login-email" type="email" placeholder="voce@email.com" required>
+
+                    <label for="login-senha">Senha</label>
+                    <input id="login-senha" type="password" placeholder="Sua senha" required>
+
+                    <button class="botao principal largura-total" type="submit">Entrar</button>
+                    <p class="troca-tela">Ainda nao tem conta? <button type="button" data-screen="cadastro">Cadastre-se</button></p>
+                    <p class="mensagem-form" id="login-message" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="screen" id="cadastro" aria-labelledby="titulo-cadastro">
+            <div class="formulario-tela">
+                <div class="formulario-imagem cadastro-img" aria-hidden="true"></div>
+                <form class="formulario" id="signup-form">
+                    <p class="etiqueta">Primeira compra</p>
+                    <h1 id="titulo-cadastro">Criar cadastro</h1>
+
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" type="text" placeholder="Seu nome" required>
+
+                    <label for="cadastro-email">E-mail</label>
+                    <input id="cadastro-email" type="email" placeholder="voce@email.com" required>
+
+                    <label for="cadastro-senha">Senha</label>
+                    <input id="cadastro-senha" type="password" placeholder="Crie uma senha" minlength="6" required>
+
+                    <button class="botao principal largura-total" type="submit">Cadastrar</button>
+                    <p class="troca-tela">Ja tem conta? <button type="button" data-screen="login">Entrar</button></p>
+                    <p class="mensagem-form" id="signup-message" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
